@@ -45,4 +45,4 @@ jobs:
       # Run as a mlflow project
       - name: Run mlflow project
         run: |
-          mlflow run wine_example --env-manager=local
+          mlflow run MLproject --env-manager=local
