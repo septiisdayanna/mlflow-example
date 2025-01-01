@@ -13,8 +13,8 @@ on:
 env:
   CSV_URL: "Project/wine-quality.csv"
   TARGET_VAR: "quality"
-  ALPHA: 0.9
-  L1_RATIO: 0.9
+  ALPHA: 0.5
+  L1_RATIO: 0.5
   RANDOM_STATE: 42
 
 jobs:
