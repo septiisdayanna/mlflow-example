@@ -45,4 +45,4 @@ jobs:
       # Run as a mlflow project
       - name: Run mlflow project
         run: |
-          mlflow run Project --env-manager=local
+          mlflow run Project --env-manager=local --backend-store-uri file:/path/to/repo/experiments/mlruns
