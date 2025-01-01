@@ -45,4 +45,12 @@ jobs:
       # Run as a mlflow project
       - name: Run mlflow project
         run: |
-          mlflow run Project --env-manager=local --backend-store-uri file:/path/to/repo/experiments/mlruns
+          mlflow run Project --env-manager=local 
+
+      - name: Save mlruns to repo
+        run: |
+          git config --global user.name "rafyardhanie"
+          git config --global user.email "rafyardhani@gmail.com"
+          git add mlruns/
+          git commit -m "Save mlruns from CI run"
+          git push origin master
